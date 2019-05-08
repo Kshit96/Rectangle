@@ -5,11 +5,17 @@ public class Rectangle {
         this.length=length;
         this.breadth=breadth;
     }
-    public int Area() {
+
+    public Rectangle(int length) {
+        this.length=length;
+        this.breadth=length;
+    }
+
+    public int area() {
         return length*breadth;
     }
 
-    public int Perimeter() {
+    public int perimeter() {
         return 2*(length+breadth);
     }
 }
